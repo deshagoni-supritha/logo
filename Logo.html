@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VoltWorx Logo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #461a47 0%, #342a72 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #a77bff;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    gap: 1rem;
+  }
+
+  .bolt {
+    animation: pulseGlow 2s infinite alternate ease-in-out;
+    filter: drop-shadow(0 0 5px #a77bff);
+  }
+
+  @keyframes pulseGlow {
+    0% {
+      filter: drop-shadow(0 0 5px #a77bff);
+      transform: translateY(0);
+    }
+    50% {
+      filter: drop-shadow(0 0 15px #a77bff);
+      transform: translateY(-5px);
+    }
+    100% {
+      filter: drop-shadow(0 0 5px #a77bff);
+      transform: translateY(0);
+    }
+  }
+.logo-text {
+    font-size: 3.5rem;
+    letter-spacing: -1px;
+    position: relative;
+    background: linear-gradient(90deg, #a399e6, #8c7de3, #a77bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
+  .tagline {
+    margin-top: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ffaaf4;
+  }
+  
+</style>
+</head>
+<body>
+  <div class="logo-container" aria-label="VoltWorx logo">
+    <svg class="bolt" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#a77bff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M13 2 L3 14 H12 L11 22 L21 10 H12 L13 2 Z" />
+    </svg>
+    <h1 class="logo-text" aria-label="VoltWorx">
+      VoltWorx
+    </h1>
+  </div>
+  <div class="tagline" aria-label="logo tagline">
+    <span class="highlight">fast.outcome-driven.connected</span>
+  </div>
+</body>
+</html>
